@@ -1,0 +1,38 @@
+{
+  "name": "discord-clone",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "server": "cd server && pnpm dev",
+    "server:install": "cd server && pnpm install",
+    "install:all": "pnpm install && cd server && pnpm install",
+    "dev:all": "concurrently \"pnpm dev\" \"pnpm server\""
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.0",
+    "rehype-highlight": "^7.0.0",
+    "react-window": "^1.8.10",
+    "zustand": "^4.4.7",
+    "socket.io-client": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@types/react-window": "^1.8.8",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.33",
+    "autoprefixer": "^10.4.17",
+    "@tailwindcss/typography": "^0.5.10",
+    "concurrently": "^8.2.2"
+  }
+}
